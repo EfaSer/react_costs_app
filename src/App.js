@@ -23,9 +23,18 @@ function App() {
     },
   ];
 
+  const addCostHandler = (cost) => {
+    const costData = {
+      ...cost,
+    };
+    costs.push(costData);
+    console.log(costData);
+    console.log(costs);
+  };
+
   return (
     <div className="App">
-      <NewCost />
+      <NewCost onAddCost={addCostHandler} />
       <Costs costs={costs} />
     </div>
   );

@@ -2,13 +2,13 @@ import { CostForm } from "./CostForm";
 import { Card } from "../UI/Card";
 import "./NewCost.css";
 
-export const NewCost = () => {
+export const NewCost = (props) => {
   const onSaveCostDataHandler = (inputCostData) => {
     const costData = {
       ...inputCostData,
       id: Math.random().toString(),
     };
-    console.log(costData);
+    props.onAddCost(costData);
   };
 
   return (
