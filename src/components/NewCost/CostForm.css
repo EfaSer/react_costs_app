@@ -1,0 +1,40 @@
+.new-cost__control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.new-cost__control label {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.new-cost__control input {
+  padding: 5px;
+  height: 25px;
+  width: 20rem;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.new-cost__control input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.new-cost__actions button {
+  margin-right: 5px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: rgb(63, 105, 153);
+  cursor: pointer;
+}
+.new-cost__actions button:hover {
+  background-color: rgb(33, 66, 104);
+}
