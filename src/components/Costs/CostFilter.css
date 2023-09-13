@@ -1,20 +1,21 @@
 .cost-filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  margin-bottom: 30px;
 }
 .cost-filter__title {
-    font-weight: 700;
-    color: #fff;
-    filter: drop-shadow(0 0 2px rgba(3, 39, 160, 0.6));
+  font-weight: 700;
+  color: #fff;
+  filter: drop-shadow(0 0 2px rgba(3, 39, 160, 0.6));
 }
 .cost-filter__select {
-    text-align: center;
-    width: 10rem;
-    height: 2.5rem;
-    font-weight: 700;
-    border-radius: 8px;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 10rem;
+  height: 2.5rem;
+  font-weight: 700;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
