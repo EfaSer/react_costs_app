@@ -61,6 +61,7 @@ export const CostForm = (props) => {
         setAmount("");
         setDate("");
         setName("");
+        props.canselForm(false);
     };
 
     return (
@@ -98,7 +99,9 @@ export const CostForm = (props) => {
                     </div>
                     <div className="new-cost__actions">
                         <button type="submit">Добавить Расход</button>
-                        <button type="submit">Отмена</button>
+                        <button type="button" onClick={props.canselForm}>
+                            Отмена
+                        </button>
                     </div>
                 </div>
             </form>

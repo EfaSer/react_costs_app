@@ -2,10 +2,3 @@
     padding: 20px;
     background-color: rgb(176, 217, 241);
 }
-.costs p {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    color: #fff;
-    filter: drop-shadow(0 0 2px rgba(3, 39, 160, 0.6));
-}
