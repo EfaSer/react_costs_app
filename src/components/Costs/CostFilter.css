@@ -7,7 +7,7 @@
 .cost-filter__title {
     font-weight: 700;
     color: #fff;
-    filter: drop-shadow(0 0 2px rgb(1, 26, 105));
+    filter: drop-shadow(0 0 2px rgba(3, 39, 160, 0.6));
 }
 .cost-filter__select {
     text-align: center;

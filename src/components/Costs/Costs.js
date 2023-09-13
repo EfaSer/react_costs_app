@@ -10,10 +10,29 @@ export const Costs = (props) => {
         setYear(selectYear);
     };
 
+    const filterCosts = props.costs.filter((cost) => {
+        return cost.date.getFullYear().toString() === year;
+    });
+
+    let contentContent = <p>В данном году расходов нет</p>;
+    if (filterCosts.length !== 0) {
+      contentContent = filterCosts.map((cost) => (
+            <CostItem
+                key={cost.id}
+                date={cost.date}
+                description={cost.description}
+                amount={cost.amount}
+            />
+        ));
+    }
+
     return (
         <div>
             <Card className="costs">
                 <CostFilter onGetYear={getYear} year={year} />
+                {contentContent}
+
+                {/* статический вариант */}
                 {/*<CostItem
                     date={props.costs[0].date}
                     description={props.costs[0].description}
@@ -29,9 +48,6 @@ export const Costs = (props) => {
                     description={props.costs[2].description}
                     amount={props.costs[2].amount}
                 />*/}
-                {/*<CostItem>
-
-                </CostItem>*/}
             </Card>
         </div>
     );
