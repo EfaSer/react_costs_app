@@ -55,8 +55,11 @@ export const CostForm = (props) => {
         const costData = {
             description: name,
             amount: amount,
-            date: new Date(date),
+            date: new Date(date).toISOString().split("T")[0],
         };
+        console.log(costData);
+
+
         props.onSaveCostData(costData);
         setAmount("");
         setDate("");

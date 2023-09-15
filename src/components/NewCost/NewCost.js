@@ -7,11 +7,11 @@ export const NewCost = (props) => {
     const [isFormVisible, setIsFormVisible] = useState(false);
 
     const onSaveCostDataHandler = (inputCostData) => {
-        const costData = {
-            ...inputCostData,
-            id: Math.random().toString(),
-        };
-        props.onAddCost(costData);
+        //const costData = {
+        //    ...inputCostData,
+        //    id: Math.random().toString(),
+        //};
+        props.onAddCost(inputCostData);
     };
 
     const inputCostDateHandler = () => {
