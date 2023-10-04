@@ -35,7 +35,7 @@ export const Costs = (props) => {
                     onGetMonth={getMonth}
                     year={year}
                 />
-                {month && <CostsDoughnut costs={filterCosts} />}
+                {month && <CostsDoughnut month={month} costs={filterCosts} />}
                 <CostsDiagram costs={filterCosts} />
                 <CostList costs={filterCosts} year={year} />
             </Card>

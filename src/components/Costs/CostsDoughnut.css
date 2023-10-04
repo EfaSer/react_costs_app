@@ -1,0 +1,22 @@
+.costs-circul__diagramm {
+    display: flex;
+    justify-content: center;
+    margin: 60px 60px;
+}
+
+.costs-doughnut {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+.cost-month {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+  font-weight: 600;
+}
