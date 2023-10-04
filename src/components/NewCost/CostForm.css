@@ -59,3 +59,15 @@
     background-color: rgb(63, 105, 153);
     cursor: pointer;
 }
+
+.new-cost__control select {
+    padding: 5px;
+    height: 35px;
+    width: 20.6rem;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

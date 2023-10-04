@@ -15,6 +15,7 @@ export const CostList = (props) => {
                     date={cost.date}
                     description={cost.description}
                     amount={cost.amount}
+                    category={cost.category}
                 />
             ))}
         </ul>

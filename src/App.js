@@ -12,13 +12,13 @@ function App() {
 
     const fetchObjects = () => {
         axios
-            .get("http://127.0.0.1:8000/api/")
+            .get("http://127.0.0.1:8000/costs/")
             .then((response) => setCosts(response.data));
     };
 
     const addCostHandler = (cost) => {
         const newObject = cost;
-        axios.post("http://127.0.0.1:8000/api/", newObject).then((response) => {
+        axios.post("http://127.0.0.1:8000/costs/", newObject).then((response) => {
             fetchObjects();
         });
     };

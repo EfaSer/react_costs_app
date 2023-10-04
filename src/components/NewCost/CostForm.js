@@ -1,10 +1,12 @@
 import "./CostForm.css";
 import { useState } from "react";
+import { SelectCategory } from "./SelectCategory";
 
 export const CostForm = (props) => {
     const [name, setName] = useState("");
     const [amount, setAmount] = useState("");
     const [date, setDate] = useState("");
+    const [category, setCategory] = useState("");
 
     //! использование одного состояния вместо трех(! не очень хорошая практика)
     // const [userInput, setUserInput] = useState({
@@ -48,6 +50,10 @@ export const CostForm = (props) => {
         // });
     };
 
+    const categorySelected = (category) => {
+        setCategory(category);
+    };
+
     const submitHandler = (event) => {
         //! preventDefault не позволяет странице обновляться, и сохраняет текущее состояние(в данном случае, в полях вводу)
         event.preventDefault();
@@ -56,9 +62,9 @@ export const CostForm = (props) => {
             description: name,
             amount: amount,
             date: new Date(date).toISOString().split("T")[0],
+            category: category,
         };
         console.log(costData);
-
 
         props.onSaveCostData(costData);
         setAmount("");
@@ -90,6 +96,7 @@ export const CostForm = (props) => {
                             onChange={amountChangeHandler}
                         />
                     </div>
+                    <SelectCategory onSelectCategory={categorySelected} />
                     <div className="new-cost__control">
                         <label>Дата</label>
                         <input

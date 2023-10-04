@@ -1,7 +1,8 @@
 .cost-filter {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0px 30px;
   margin-bottom: 30px;
 }
@@ -18,4 +19,22 @@
   border-radius: 8px;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.cost-filter__month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 25rem;
+}
+.cost-filter__year {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+.cost-filter label {
+  margin-right: 30px;
 }
