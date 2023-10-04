@@ -1,15 +1,11 @@
 export const CostsDoughnut = (props) => {
-    const doughnutDataSet = [
-        { label: "Продукты", value: 0 },
-        { label: "Счета", value: 0 },
-        { label: "Другое", value: 0 },
-    ];
+    const doughnutDataSet = { Продукты: 0, Счета: 0, Другое: 0 };
     console.log(props.costs);
     for (const cost of props.costs) {
         const costCategory = cost.category;
         console.log(costCategory);
         //console.log(doughnutDataSet[costCategory].value);
-        doughnutDataSet[costCategory].value += 1;
+        doughnutDataSet[costCategory] += cost.amount;
     }
     console.log(doughnutDataSet);
     return (
